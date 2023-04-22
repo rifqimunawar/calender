@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/calender',[CalenderController::class, 'index'])->name('index');
+Route::post('/calender/store',[CalenderController::class, 'store'])->name('store.calender');
